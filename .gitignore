@@ -1,0 +1,33 @@
+# --- Xilinx Vivado build artifacts (regenerated; never commit) ---
+*.cache/
+*.hw/
+*.sim/
+*.runs/
+*.ip_user_files/
+*.gen/
+.Xil/
+*.jou
+*.log
+*.str
+*.pb
+*.dcp
+*.bit
+*.bin
+*.ltx
+*.rpt
+*.wdb
+*.wcfg
+*.os
+vivado*.backup.*
+webtalk*.jou
+webtalk*.log
+usage_statistics_webtalk.*
+hs_err_pid*.log
+
+# Archives / misc
+*.zip
+*.7z
+
+# OS / editor
+.DS_Store
+Thumbs.db
