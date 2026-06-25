@@ -17,11 +17,12 @@ Two source trees, kept as they were organized during the course:
 ### `ProjectLab/` — main project work (rover, group projects, iterations)
 The bulk of the work, evolving toward a final autonomous rover. Notable pieces:
 
-- **Rover / navigation** — `Rover Navigation/`, `Rover_Navigation/`, `Toward Final/`,
-  `Trial1 Main Project/`, `navigation2.v`, `Rover_LF_TR_Only.v`: top-level controllers
-  that tie sensors → navigation state machine → motor/servo outputs.
-- **Sensing** — IR and proximity/line sensors (`IR_Test/`, `Sensor_another.v`,
-  `Group1/sensor.v`, sensor modules throughout).
+- **Rover / navigation** — `Rover Navigation/`, `Rover Navigation IR variant/`,
+  `Rover_Navigation/`, `Toward Final/`, `Trial1 Main Project/`, `Verylastone/`:
+  top-level controllers that tie sensors → navigation state machine → motor/servo
+  outputs.
+- **Sensing** — IR and proximity/line sensors (`IR_Test/`, `Group1/sensor.v`,
+  sensor modules throughout).
 - **Actuation** — DC motor + PWM and servo control (`Dc Motor and VG Switch Test/`,
   `DC_Prox_Servo_Test/`, `Servo/`, `motor_control.v`), with debounce / edge-detect
   helpers.
@@ -73,7 +74,12 @@ The build directories are intentionally not committed; Vivado regenerates them.
 
 ## Notes
 
-- Folder and file names (including some `- Copy` duplicates and work-in-progress
-  iterations) are preserved as-is to keep the development history of the lab.
+- Named project folders are kept as distinct iterations of the rover work (e.g.
+  `Toward Final`, `Trial1 Main Project`, `Verylastone`, and the `Rover Navigation`
+  variants). Loose standalone experiments and testbenches live under
+  `ProjectLab/scratch/`.
+- Cleaned for this repo: empty placeholder files and a redundant `Copy - Copy`
+  backup folder were removed, and loose root files were moved into `scratch/`. The
+  full Vivado projects (build artifacts) remain in the original local working copies.
 - Group submissions (`Group1`, `Group10`) include work by other lab groups, kept for
   reference and completeness.
